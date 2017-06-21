@@ -1,15 +1,14 @@
-" Generic
-set number
-syntax on
-filetype plugin indent on
-" show existing tab with 4 spaces width
 set tabstop=4
-" when indenting with '>', use 4 spaces width
 set shiftwidth=4
-" On pressing tab, insert 4 spaces
 set expandtab
+set smarttab
+set number
+set nocompatible
+set exrc
+set secure
 
-" Enable pathogen
-execute pathogen#infect()
-highlight ColorColumn ctermbg=7
 set colorcolumn=100
+" For Java projects, read dots as file paths
+set includeexpr=substitute(v:fname,'\\.','/','g')
+
+execute pathogen#infect()
