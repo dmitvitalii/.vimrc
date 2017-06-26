@@ -14,7 +14,9 @@ set secure
 " Tweak searching
 set incsearch
 set hlsearch
-
+" Case sensitivity
+set ignorecase
+set smartcase
 
 " Enable pathogen
 execute pathogen#infect()
