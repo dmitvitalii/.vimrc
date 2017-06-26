@@ -11,6 +11,9 @@ set expandtab
 " Let the other .vimrc live
 set exrc
 set secure
+" Tweak searching
+set incsearch
+set hlsearch
 
 
 " Enable pathogen
